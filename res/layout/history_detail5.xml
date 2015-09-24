@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qihoo.testtools_new.WelcomeActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="测试名称："
+            android:textSize="16sp"
+            android:textColor="#48d3b4" />
+
+        <TextView
+            android:id="@+id/history_recode_all_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2015-09-07 15:46:12"
+            android:textSize="16sp"
+            android:textColor="#a8a8a8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="比较次数："
+            android:textSize="16sp"
+            android:textColor="#48d3b4" />
+
+        <TextView
+            android:id="@+id/history_recode_all_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="80s"
+            android:textSize="16sp"
+            android:textColor="#a8a8a8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="比较内容："
+            android:textSize="16sp"
+            android:textColor="#48d3b4" />
+
+        <TextView
+            android:id="@+id/history_recode_bat_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="CPU,内存（电量和流量不比较）"
+            android:textSize="16sp"
+            android:textColor="#a8a8a8" />
+    </LinearLayout>
+
+</LinearLayout>

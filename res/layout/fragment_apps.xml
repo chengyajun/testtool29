@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qihoo.testtools_new.WelcomeActivity" >
+
+    <ListView
+        android:id="@+id/lv_apps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0000"
+        android:divider="#ebebeb"
+         android:dividerHeight="1px"
+        android:cacheColorHint="#0000" >
+    </ListView>
+
+</RelativeLayout>

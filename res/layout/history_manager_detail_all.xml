@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelephoneManagerActivity"
+    android:background="#fff" >
+
+    
+    <RelativeLayout
+        android:id="@+id/history_recode_top_banner"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="#55a8ea"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/history_recode_all_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/back_img_03"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="测试结果比较"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+    
+    <!-- top_banner  start -->
+
+    <LinearLayout
+        android:id="@+id/history_manager_detail_top_banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/history_detail_bg_03"
+        android:gravity="center_vertical"
+          android:layout_below="@id/history_recode_top_banner"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/history_manager_detail_all_result"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:text="测试结果"
+            android:textColor="#3a97ee"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/history_manager_detail_all_cpu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:text="CPU测试"
+            android:textColor="#878787"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/history_manager_detail_all_mem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="内存测试"
+            android:textColor="#878787"
+            android:textSize="14sp"
+            android:background="#0000" />
+
+        
+    </LinearLayout>
+   <com.qihoo.testtools_new.view.TopBannerCursor
+        android:id="@+id/ivCursor"
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:layout_alignBottom="@id/history_manager_detail_top_banner"
+        android:src="@drawable/cursor"/>
+    <!-- top_banner  end -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/history_manager_detail__viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_below="@id/history_manager_detail_top_banner" >
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.qihoo.testtools_new.WelcomeActivity" >
+
+    <RelativeLayout
+        android:id="@+id/history_top_banner"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="#55a8ea"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/history_manager_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/back_img_03"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="appname"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/history_buttom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttom_banner_bg_03"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:id="@+id/history_all_cb"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:button="@drawable/radiobutton_selector"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/history_all_cb"
+            android:text="全选"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/history_check_btn"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#d8d8d8"
+            android:gravity="center"
+            android:text="统计（0）"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_history_manager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/history_buttom_bar"
+        android:layout_below="@id/history_top_banner"
+        android:background="#0000"
+        android:cacheColorHint="#0000"
+        android:divider="#ebebeb"
+        android:dividerHeight="2px" >
+    </ListView>
+
+</RelativeLayout>

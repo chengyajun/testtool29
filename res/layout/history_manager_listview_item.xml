@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="#fff"
+    tools:context="com.qihoo.testtools_new.WelcomeActivity" >
+
+    <com.qihoo.testtools_new.view.HistoryManagerSlidingMenu
+        android:id="@+id/history_manager_slidemenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/history_manager_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true" >
+
+                <CheckBox
+                    android:id="@+id/history_manager_item_cb"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:button="@drawable/radiobutton_selector"
+                    android:checked="false"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_history_manager_num"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/history_manager_item_cb"
+                    android:gravity="right"
+                    android:text="99"
+                    android:textColor="#727272"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_history_manager_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="58dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_history_manager_num"
+                    android:gravity="center_vertical"
+                    android:text="08-24 19:12"
+                    android:textColor="#bababa"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_history_manager_item_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/history_back_03" />
+
+                <TextView
+                    android:id="@+id/iv_history_manager_item_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/iv_history_manager_item_more"
+                    android:text=""
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/history_manager_delete_layout"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#f5a09a" >
+
+                <ImageButton
+                    android:id="@+id/history_manager_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="#0000"
+                    android:padding="4dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/history_delete" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.qihoo.testtools_new.view.HistoryManagerSlidingMenu>
+
+</RelativeLayout>

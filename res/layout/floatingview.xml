@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/floatview_bg_03"
+    android:padding="4dp"
+    android:orientation="vertical" >
+
+    <!-- android:updatePeriodMillis="10000"> -->
+
+    <TextView
+        android:id="@+id/tv_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="MEM:00.00MB"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_cpu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="CPU:00.00%"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_traffic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    
+    <Button 
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="@drawable/floatview_btn_07"
+        android:text="退出"
+         android:textSize="14sp"
+         android:layout_gravity="center_horizontal"
+        android:id="@+id/close"/>
+
+</LinearLayout>

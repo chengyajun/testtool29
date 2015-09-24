@@ -1,0 +1,220 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qihoo.testtools_new.WelcomeActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/listview_item_bg_10" >
+
+        <ImageView
+            android:id="@+id/setting_time_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/setting_clock_03" />
+
+        <TextView
+            android:id="@+id/setting_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/setting_time_img"
+            android:gravity="center_vertical"
+            android:text="设置采样时间"
+            android:textColor="#727272"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/setting_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/setting_time_title"
+            android:text="3s"
+            android:textColor="#f5a09a"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/setting_time_tb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:button="@drawable/switch_btn"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_time_seekbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/listview_item_bg_10"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1秒"
+                android:textColor="#999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2秒"
+                android:textColor="#999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3秒"
+                android:textColor="#999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4秒"
+                android:textColor="#999"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5秒"
+                    android:textColor="#999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="6秒"
+                    android:textColor="#999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/setting_time_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="100"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:progress="40"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/thumb" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/listview_item_bg_10" >
+
+        <ImageView
+            android:id="@+id/setting_window_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/setting_window_03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/setting_window_img"
+            android:gravity="center_vertical"
+            android:text="设置悬浮窗是否开启"
+            android:textColor="#727272"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/setting_window_tb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:button="@drawable/switch_btn"
+            android:checked="true"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/listview_item_bg_10" >
+
+        <ImageView
+            android:id="@+id/setting_delete_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/setting_trash_03" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/setting_delete_img"
+            android:gravity="center_vertical"
+            android:text="清除所有记录"
+            android:textColor="#727272"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

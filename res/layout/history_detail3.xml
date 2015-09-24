@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qihoo.testtools_new.WelcomeActivity" >
+
+   <com.qihoo.testtools_new.view.MyChartView
+        android:id="@+id/history_recode_memery"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:layout_margin="5dip"
+        android:background="#fff" />
+
+</RelativeLayout>
